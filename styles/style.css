@@ -238,3 +238,7 @@ input {
     padding: 8px;
     border: solid 1px lightgrey;
 }
+
+a.image-link {
+    text-decoration: none;
+}
