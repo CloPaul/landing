@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    min-height: 85vh;
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+}
+
+.navbar-right {
+    float: right;
+    padding: 30px;
+}
+
+
+.navbar-left {
+    float: left;
+}
+
+.navbar img {
+    padding: 20px;
+    width: 150px;
+}
+
+.navbar {
+    height: 10vh;
+}
+
+.header-text-container {
+    width: 100%;
+    height: calc(80vh - 10vh);
+    display: flex;
+}
+
+.header-text-container div {
+    margin: auto;
+    text-align: center;
+}
+
+.header-title {
+    color: white;
+    font-size: xxx-large;
+    text-shadow: 0px 0px 17px rgba(0, 0, 0, 0.66);
+}
+
+.header-subtitle {
+    color: white;
+    text-shadow: 0px 0px 17px rgba(0, 0, 0, 0.45);
+}
+
+.cta-button {
+    background-color: #49ad63;
+    border-radius: 28px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+
+.cta-button:hover {
+    background-color: #3d9454;
+}
+
+.cta-button:active {
+    position: relative;
+    top: 1px;
+}
+
+
+
+
+.column {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+
+.column-one-third {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+.column-two-third {
+    float: left;
+    width: 66%;
+    text-align: center;
+}
+
+.row {
+    margin: 70px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    margin: 3%;
+    text-align: center;
+    background-color: #f1f1f1;
+    max-width: 300px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    filter: brightness(0.8);
+    transition: filter .3s;
+    cursor: pointer;
+}
+
+.card:hover+h3 {
+    transform: translateY(-55px);
+    color: white;
+}
+
+.card:hover {
+    filter: brightness(0.6);
+}
+
+.subcard-text {
+    margin: auto;
+    color: rgb(26, 26, 26);
+    transition: all .3s;
+    margin: 10px;
+    font-size: x-large;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#conservatoire {
+    background: url(../images/conservatoire.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#barjazz {
+    background: url(../images/barjazz.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#studio {
+    background: url(../images/studio.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#appartement {
+    background: url(../images/header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background: rgb(242, 242, 242);
+    padding: 30px;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+}
+
+
+@media (max-width: 767px) {
+    /* Tablette + mobiles */
+
+    .navbar-left {
+        width: 100%;
+        float: unset;
+        text-align: center;
+    }
+
+    .navbar-right {
+        float: unset;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .navbar-right a {
+        padding: 5px;
+    }
+
+    .column,
+    .column-one-third,
+    .column-two-third {
+        width: 100%;
+    }
+}
+
+#contactus {
+    border-top: solid 1px lightgrey;
+}
+
+.form-card {
+    background: white;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input {
+    border-radius: 6px;
+    padding: 8px;
+    border: solid 1px lightgrey;
+}
